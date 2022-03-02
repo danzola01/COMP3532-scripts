@@ -1,5 +1,5 @@
 # COMP3532-scripts
-A collection of bash scripts created for the course COMP3532 at Mount Royal University
+A collection of bash shell scripts created for the course COMP3532 at Mount Royal University
 
 ## passgen.sh
 Script that generates a password.
@@ -11,8 +11,8 @@ Capable of handling the following flags:
 |   -l   	| Specifies that lowercase letters should be used.                                                                                           	|
 |   -u   	| Specifies that uppercase letters should be used.                                                                                           	|
 |   -d   	| Specifies that numerical digits should be used.                                                                                            	|
-|   -s   	| Specifies that symbols should be used (i.e. @#$%&\*)                                                                                        |
-|   -e   	| Easy to read. Exclude ambiguous characters (i.e. Il1o0)                                                                                    	|
+|   -s   	| Specifies that symbols should be used (i.e. `@#$%&*`)                                                                                        |
+|   -e   	| Easy to read. Exclude ambiguous characters (i.e. `Il1o0`)                                                                                    	|
 
 **Notes**
 - If none of the flags specifying which characters to use (i.e. l,u,d,s) are used then only lowercase characters should be used.
