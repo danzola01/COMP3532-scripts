@@ -12,14 +12,14 @@ symbols='false'
 easy='false'
 
 # usage function will show help
-usage() {                                 
-  echo "Usage: $0 
-    [-n --> Number of characters in password (must be >=1)] 
-    [-l --> Specifies that lowercase letters should be used] 
+usage() {
+  echo "Usage: $0
+    [-n --> Number of characters in password (must be >=1)]
+    [-l --> Specifies that lowercase letters should be used]
     [-u --> Specifies that uppercase letters should be used]
-    [-d --> Specifies that numerical digits should be used] 
+    [-d --> Specifies that numerical digits should be used]
     [-s --> Specifies that symbols should be used (i.e. @#$%&*)]
-    [-e --> Easy to read. Exclude ambiguous characters (i.e. Il1o0)]" 1>&2 
+    [-e --> Easy to read. Exclude ambiguous characters (i.e. Il1o0)]" 1>&2
 }
 
 # function to exit with error
@@ -30,27 +30,27 @@ error_exit() {
 
 while getopts ":n:ludse" options; do
   case "${options}" in
-    n) 
+    n)
         # specifies the number of characters in the password to be generated.
-        number=${OPTARG:-8} 
+        number=${OPTARG:-8}
         ;;
-    l) 
+    l)
         # specifies that lowercase letters should be used.
         lower='true'
         ;;
-    u) 
+    u)
         # specifies that uppercase letters should be used.
         upper='true'
         ;;
-    d) 
+    d)
         # specifies that numerical digits should be used.
         digits='true'
         ;;
-    s) 
+    s)
         # specifies that symbols should be used (i.e. @#$%&*)
         symbols='true'
         ;;
-    e) 
+    e)
         # easy to read. Exclude ambiguous characters (i.e. Il1o0)
         easy='true'
         ;;
